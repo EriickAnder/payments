@@ -19,6 +19,8 @@
             @if ($createPayment['billingType'] == 'BOLETO')
                 <a href="{{ $createPayment['bankSlipUrl'] }}" class="done-payment-button done-boleto">Realizar Pagamento via
                     Boleto</a>
+            @elseif ($createPayment['billingType'] == 'CREDIT_CARD')
+                <p class="alert alert-success text-center">Pagamento realizado com sucesso via Cartão de Crédito.</p>
             @elseif ($createPayment['billingType'] == 'PIX')
                 <div class="done-pix-section">
                     <img src="data:image/png;base64,{{ $paymentInformation['pix']['encodedImage'] }}" alt="QR Code PIX"
