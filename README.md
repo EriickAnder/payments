@@ -34,6 +34,10 @@ TOKEN_ASAAS=seu_token_aqui
 
 
 Testes realizados
-Validação de CPF
+* Validação de CPF
+* Pagamento realizado via Asaas
 
-Pagamento realizado via Asaas
+## php artisan test 
+
+* Relatorio de cobertura
+## php artisan test --coverage-html=coverage-report
